@@ -6,15 +6,15 @@
 }
 /* Custom properties */
 :root {
-    --ff-primary: 'Source Sans Pro', sans-serif;
-    --ff-secondary:'Source code Pro', monospace;
+    --ff-primary: 'Lora', serif;
+    --ff-secondary: 'Roboto', sans-serif;
     
-    --fw-reg: 300;
-    --fw-bold: 900;
+    --fw-reg: 400;
+    --fw-bold: 700;
 
     --clr-light: #fff;
     --clr-dark: #303030;
-    --clr-accent: #16e0bd;
+    --clr-accent: #75ec85;
 
     --fs-h1: 3rem;
     --fs-h2: 2.25rem;
@@ -35,8 +35,13 @@
     }
 
 }
+/* General Styles */
 
-body {
+html{
+    scroll-behavior: smooth;
+}
+
+body {   
     background: var(--clr-light);
     color: var(--clr-dark);
     margin: 0;
@@ -172,7 +177,7 @@ header{
 }
 
 .nav-open .hamburger {
-    transform: rotate (.625turn);
+    transform: rotate(.625turn);
 }
 
 .nav-open .hamburger::before {
@@ -445,7 +450,18 @@ header{
         padding: .5em;
     }
 
+/* itemPortfolio-individual */
 
+.itemPortfolio-individual{
+    padding:0 2em 2em;
+    max-width: 1000px;
+    margin: 0 auto
+}
+.itemPortfolio-individual p{
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+}
 
 
  
