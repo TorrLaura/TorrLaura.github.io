@@ -26,18 +26,17 @@
     0.125em 0.125em 0.25em rgba(0,0,0,.25); 
 }
 
-@media (min-width: 800px){
+@media (min-width: 800px) {
 :root {
     --fs-h1: 4.5rem;
     --fs-h2: 3.75rem;
     --f-h3: 1.5rem;
     --fs-body: 1.125rem;
     }
-
 }
 /* General Styles */
 
-html{
+html {
     scroll-behavior: smooth;
 }
 
@@ -50,7 +49,7 @@ body {
     line-height: 1.6;
 }
 
-section{
+section {
     padding: 5em 2em;
 }
 
@@ -58,10 +57,10 @@ img {
     display: block;
     max-width: 100%;
 }
- strong{ font-weight: var (--fw-bold);}
+ strong { font-weight: var (--fw-bold);}
 /* Typography */
 
-:focus{
+:focus {
     outline: 3px solid var(--clr-accent);
     outline-offset: 4px;
 }
@@ -80,14 +79,14 @@ img {
     transition: transform 200ms ease-in-out;
 }
 
-.btn:hover{
+.btn:hover {
     transform: scale(1.1);
 }
 
 
 h1, 
 h2, 
-h3 {
+h3{
     line-height: 1;
     margin: 0;
 }
@@ -97,30 +96,37 @@ h2{font-size: var(--fs-h2)}
 h3{font-size: var(--fs-h3)}
 
 
-.section__title{
-    margin-bottom: .25rem;
+.section__title {
+    margin-bottom: .25em;
 }
 
-.section__title--intro{
+.section__title--intro {
     font-weight: var(--fw-reg)
 }
 
-.section__title--intro strong{
+.section__title--intro strong {
     display: block;
 }
 
-.section__subtitle{
+.section__subtitle {
     margin: 0;
     font-size: var(--fs-h3);
 }
 
 .section__subtitle--intro,
-.section__subtitle--about{
+.section__subtitle--about {
     background-color: var(--clr-accent);
     padding: .25em 1em;
     font-family: var(--ff-secondary);
     margin-bottom: 1em;
 }
+
+.section__title--work{
+    color: var(--clr-accent);
+    font-weight: var(var(--fw-bold));
+    margin-bottom: 2em;
+}
+
 /* header */
 header{
     display: flex;
@@ -157,7 +163,7 @@ header{
     color: var(--clr-accent);
 }
 
-.nav-toggle {
+.nav-toggle{
     padding: .5em;
     background: transparent;
     border: 0;
@@ -172,7 +178,7 @@ header{
     transform: translateX(0);
 }
 
-.nav-open .nav-toggle{
+.nav-open .nav-toggle {
     position: fixed;
 }
 
@@ -192,7 +198,7 @@ header{
 
 /* Hamburger */
 
-.hamburger {
+.hamburger{
     display: block;
     position: relative;
 }
@@ -209,15 +215,15 @@ header{
 
 
 .hamburger::before,
-.hamburger::after {
+.hamburger::after{
     content: '';
     position: absolute;
     left: 0;
     right: 0;
 }
 
-.hamburger::before{top: 6px; }
-.hamburger::after{bottom: 6px; }
+.hamburger::before{top: 6px;}
+.hamburger::after{bottom: 6px;}
 
 .nav__list{
     list-style: none;
@@ -244,10 +250,10 @@ header{
     
 }
 
-@media (min-width: 600px) {
+@media (min-width: 600px){
         .intro{
         display: grid;
-        width:min-content;
+        width: min-content;
         margin: 0 auto;
         grid-column-gap: 1em;
         grid-template-areas: 
@@ -255,16 +261,15 @@ header{
         "img subtitle";
         grid-template-columns: min-content max-content;
     }
+       /* Main/first pic styling */
         .intro__img{
         grid-area: img;
         min-width: 250px;
         position: relative;
         z-index: 2;
-        
-        
-        
+    
     }
-    .section__subtitle--intro {
+    .section__subtitle--intro{
         align-self: start;
         grid-column: -1 / 1;
         grid-row: 2;
@@ -284,12 +289,12 @@ header{
     text-align: center;
 }
 
-.section__title--services{
+.section__title--services {
     color: var(--clr-accent);
     position: relative;
 }
 
-.section__title--services::after{
+.section__title--services::after {
     content: '';
     display: block;
     width: 2em;
@@ -304,21 +309,21 @@ header{
     margin: 0 auto;
 }
 
-.services{
+.services {
     margin-bottom: 4em;
 }
 
-@media (min-width: 800px) {
-    .services{
+@media (min-width: 800px){
+    .services {
         display: flex;
         max-width: 1000px;
         margin: 0 auto;
-        margin-left:auto;
+        margin-left: auto;
         margin-right: auto;
 
     }
 
-    .service + .service{
+    .service + .service {
         margin-left: 2em;
     }
 
@@ -388,10 +393,12 @@ header{
 
 .portfolio__item{
     background: var(--clr-accent);
+    overflow: hidden;
 }
 
 .portfolio__img{
-    transition: 750ms cubic-bezier(.5, 0, .5,1),opacity 250ms linear;
+    transition: 750ms cubic-bezier(.5, 0, .5, 1),
+    opacity 250ms linear;
 }
 
 .portfolio__item:focus{
@@ -427,7 +434,7 @@ header{
 }
 
     .footer__link:hover,
-    .social-list__item:hover {
+    .social-list__item:hover{
         opacity: .7;
     }
 
