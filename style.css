@@ -137,6 +137,8 @@ header{
 
 .logo{
     max-width: 100px;
+    
+   
 }
         /* NAV */
 .nav{
@@ -460,6 +462,10 @@ header{
     }
     .social-list__link{
         padding: .5em;
+    }
+
+    .folioexplanation{
+        color: #75ec85;
     }
 
 /* itemPortfolio-individual */
