@@ -197,7 +197,9 @@ header{
     opacity: 0;
 }
 
-
+.resume{
+    url: http://127.0.0.1:5500/PortfolioSite/resume.html;
+}
 
 /* Hamburger */
 
@@ -490,10 +492,8 @@ header{
 
 .portfolio__item{
     display: inline-block;
-    
-    
 }
-
+    
 
  
 
